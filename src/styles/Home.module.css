@@ -1,0 +1,41 @@
+.homeBg {
+    height: 100vh;
+    position: relative;
+}
+
+.homeContentBg {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.homeContent {
+    height: 100%;
+}
+
+/* .rightContent {
+    width: 20%;
+} */
+.leftContent {
+    width: 16%;
+}
+
+.centerContent {
+    width: 84%;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+/* width */
+.centerContent::-webkit-scrollbar {
+    width: 0px;
+}
+
+.leftContent {
+    border-right: 1px solid #c1c1c1;
+}
+
+.rightContent {
+    border-left: 1px solid #c1c1c1;
+}

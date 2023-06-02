@@ -1,0 +1,17 @@
+.homeShoutSliderBox {
+    padding: 1rem 3rem;
+    margin-top: 5rem;
+}
+
+.shoutCategory {
+    background-color: #E6E6E6;
+    color: var(--bg-dark);
+    padding: 10px 15px;
+    border-radius: 6px;
+    text-align: center;
+    font-family: mediumfont;
+    width: max-content;
+    font-size: 14px;
+    text-transform: capitalize;
+    cursor: pointer;
+}

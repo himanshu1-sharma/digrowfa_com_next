@@ -1,0 +1,60 @@
+/* =====login signup====== */
+
+#dark #loginSignupBg {
+    background-color: var(--bg-dark);
+    background-image: none;
+}
+
+/* =====end==== */
+
+/* =====auth form===== */
+#light #darkLogo {
+    display: block !important;
+}
+
+#light #lightLogo {
+    display: none !important;
+}
+
+#dark #lightLogo {
+    display: block !important;
+}
+
+#dark #darkLogo {
+    display: none !important;
+}
+
+#dark #formContent h1,
+#dark #formContent p,
+#dark #formContent h2,
+#dark #formContent input,
+#dark #formContent label {
+    color: var(--white);
+}
+
+#dark #formContent input:hover {
+    border-color: var(--white);
+}
+
+#dark .special-label {
+    background-color: var(--bg-dark);
+    color: var(--white);
+}
+
+#dark #checkAccount {
+    color: var(--white);
+}
+
+
+#dark #formGroup input,
+#dark #otpInput input {
+    background-color: var(--bg-dark);
+    border-color: var(--white);
+}
+
+#dark #handleName span,
+#dark #smsWaiting h6 {
+    color: var(--white);
+}
+
+/* =====end===== */

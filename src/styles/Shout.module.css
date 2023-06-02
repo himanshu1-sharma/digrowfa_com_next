@@ -1,0 +1,60 @@
+.shoutCardContainer {
+    /* background-color: aqua; */
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    overflow-x: hidden;
+    -ms-scroll-snap-type: y mandatory;
+    scroll-snap-type: y mandatory;
+    position: relative;
+    margin: 2rem 0 0 0;
+}
+
+.shoutCardContainer>div:first-child {
+    margin-top: 4rem;
+}
+
+/* Track */
+.shoutCardContainer::-webkit-scrollbar {
+    width: 0px;
+}
+
+.shoutCardBox {
+    width: 545px;
+    height: 841px;
+    margin: 0 auto 1rem auto;
+    scroll-snap-align: center;
+    position: relative;
+    top: 0;
+    overflow: hidden;
+    display: flex;
+}
+
+.shoutCard {
+    width: 473px;
+    height: 100%;
+    background-color: var(--bg-dark);
+    border-radius: 20px/20px;
+    overflow: hidden;
+}
+
+.shoutCard>video {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.shoutCardContentBox {
+    width: 72px;
+    height: 100%;
+    /* background-color: red; */
+    text-align: center;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.shoutCardContent {
+    margin-bottom: 1.5rem;
+}

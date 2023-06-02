@@ -1,0 +1,20 @@
+.chatRequestContentBox{
+    margin-top: 2rem;
+}
+.chatRequestContent{
+    padding: 10px 2rem 2rem 2rem;;
+}
+.searchChatUser {
+    display: flex;
+    align-items: center;
+    background: #F2FAFF;
+border-radius: 12px/12px;
+padding: 5px 15px;
+margin-bottom: 1rem;
+}
+.searchChatUser  input{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    font-size: 14px;
+}

@@ -1,0 +1,637 @@
+.loginSignupBg {
+    width: 100%;
+    height: 100vh;
+    background-image: url("/auth/bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.overlayImg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("/auth/overlayImg.png");
+    background-position: top right;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.loginSignupBox {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.loginSignupContent h1 {
+    color: var(--white);
+    font-family: boldfont;
+}
+
+.loginSignupContent p {
+    color: var(--white);
+    font-size: 20px;
+    margin-bottom: 2rem;
+}
+
+.buttonWidth {
+    width: 470px;
+}
+
+.loginSignupContent button {
+    width: 100%;
+    background-color: transparent;
+    border-radius: 15px/15px;
+    padding: 15px;
+    border: 3px solid;
+    border-color: transparent;
+    font-family: mediumfont;
+    font-size: 20px;
+}
+
+.createNew {
+    background-color: var(--white) !important;
+    color: var(--secondary);
+}
+
+.haveAccount {
+    border-color: var(--white) !important;
+    color: var(--white);
+}
+
+.or {
+    position: relative;
+    text-align: center;
+    color: var(--white);
+    margin: 1.5rem 0;
+    font-size: 20px;
+}
+
+.or::after {
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 50px;
+    background-color: var(--white);
+    top: 50%;
+    left: 32%;
+    transform: translate(-50%, -50%);
+}
+
+.or::before {
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 50px;
+    background-color: var(--white);
+    top: 50%;
+    right: 20%;
+    transform: translate(-50%, -50%);
+}
+
+.loginSignupLogo {
+    position: absolute;
+    margin-top: 2rem;
+}
+
+.authBg {
+    width: 100%;
+    height: 100vh;
+}
+
+/* =====form===== */
+
+.formContainer {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.formBox {
+    width: 500px;
+    height: 726px;
+    border: 2px solid var(--secondary);
+    border-radius: 30px;
+    position: relative;
+}
+
+.logoBox {
+    position: absolute;
+    bottom: 0.2rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.formBox {
+    padding: 2rem;
+}
+
+.formBox h1 {
+    font-family: boldfont;
+    font-size: 50px;
+}
+
+.formBox h1 span {
+    font-family: boldfont;
+    color: var(--secondary);
+}
+
+.formBox p {
+    opacity: 0.6;
+    font-size: 14px;
+    text-transform: capitalize;
+    margin: 1rem 0;
+}
+
+.formContent h2 {
+    font-family: semibold;
+    margin: 2rem 0 1rem 0;
+    line-height: 1.5;
+}
+
+.formContent h2 span {
+    font-family: semibold;
+    color: var(--secondary);
+}
+
+.phoneInput {
+    margin-top: 2rem;
+}
+
+.phoneInput input {
+    width: 100% !important;
+    background-color: transparent !important;
+}
+
+.detailModalBox {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.detailModalBox i,
+.detailModalBox a {
+    font-style: italic;
+    color: var(--secondary);
+    font-size: 14px;
+    font-family: mediumfont;
+    margin-top: 10px;
+    cursor: pointer;
+    width: max-content;
+}
+
+.formCheck {
+    margin: 2rem 0 1rem 0;
+}
+
+.formCheck a {
+    color: var(--secondary);
+}
+
+.formCheck label {
+    font-size: 14px;
+}
+
+.formBtn {
+    margin: 2rem 0 1rem 0;
+}
+
+.formBtn button {
+    width: 100%;
+    height: 60px;
+    border-radius: 10px/10px;
+    background-color: var(--secondary);
+    color: var(--white);
+    outline: none;
+    border: none;
+}
+
+.checkAccount {
+    text-align: center;
+}
+
+.checkAccount a {
+    color: var(--secondary);
+}
+
+.safe {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.otpInput div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.profileFormGroupImg {
+    position: relative;
+    margin-bottom: 4rem;
+}
+
+.profileFormGroupImg label {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 2px solid var(--secondary);
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    cursor: pointer;
+    text-align: center;
+}
+
+.profileFormGroupImg label svg {
+    color: var(--white);
+}
+
+.userProfilePic {
+    width: 100px;
+    height: 100px;
+    /* border: 1px solid var(--secondary); */
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    background-image: url("/icons/addProfile.png");
+    /* background-color: red; */
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+}
+
+.userProfilePicPrew {
+    width: 100%;
+    height: 100%;
+    background-position: top;
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* background-color: var(--white); */
+}
+
+.formGroup {
+    margin-bottom: 1rem;
+}
+
+.formGroup input {
+    width: 100%;
+    height: 60px;
+    background-color: var(--input);
+    outline: none;
+    border-color: transparent;
+    border-radius: 10px;
+    padding: 0 1.5rem;
+
+}
+
+.formGroup input::placeholder {
+    opacity: 0.6;
+}
+
+.handleName {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.handleName span {
+    font-family: semibold;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.optInput div {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.optInput div span {
+    display: none;
+}
+
+.optInput div input {
+    height: 60px;
+    width: 60px !important;
+    background-color: var(--input);
+    outline: none;
+    border-color: transparent;
+    border-radius: 10px;
+}
+
+.smsWaiting {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.smsWaiting h6 {
+    font-size: 14px;
+}
+
+.smsWaiting h6 a,
+.smsWaiting h6 span {
+    color: var(--secondary);
+    cursor: pointer;
+}
+
+.loginForm {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    background-color: var(--input);
+    outline: none;
+    border-color: transparent;
+    border-radius: 10px;
+    padding: 0 1rem;
+    margin-top: 1rem;
+}
+
+
+
+.loginForm input {
+    background-color: transparent;
+    outline: none;
+    border: none;
+}
+
+.loginForm input::placeholder {
+    opacity: 0.6;
+}
+
+.passwordIcon {
+    cursor: pointer;
+}
+
+.passwordShow svg path {
+    fill: var(--secondary) !important;
+}
+
+.forgetOtpOption {
+    margin-top: 4rem;
+    text-align: center;
+}
+
+
+
+.forgetOtpOption input[type="radio"]:checked,
+.forgetOtpOption input[type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+
+.forgetOtpOption input[type="radio"]:checked+label,
+.forgetOtpOption input[type="radio"]:not(:checked)+label {
+    position: relative;
+    padding-left: 28px;
+    cursor: pointer;
+    line-height: 20px;
+    display: inline-block;
+    color: #666;
+}
+
+.forgetOtpOption input[type="radio"]:checked+label:before,
+.forgetOtpOption input[type="radio"]:not(:checked)+label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ddd;
+    border-radius: 100%;
+    background: #fff;
+}
+
+.forgetOtpOption input[type="radio"]:checked+label {
+    color: var(--secondary);
+}
+
+.forgetOtpOption input[type="radio"]:checked+label:before {
+    border-color: var(--secondary);
+}
+
+
+
+.forgetOtpOption input[type="radio"]:checked+label:after,
+.forgetOtpOption input[type="radio"]:not(:checked)+label:after {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background: var(--secondary);
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    border-color: var(--secondary);
+}
+
+.forgetOtpOption input[type="radio"]:not(:checked)+label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+
+.forgetOtpOption input[type="radio"]:checked+label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.selecteMargin {
+    margin-top: 2.2rem;
+}
+
+.orDivider {
+    width: 80%;
+    height: 1px;
+    background-color: #cccccc;
+    margin: 2rem auto 2rem auto;
+    position: relative;
+}
+
+.orDivider::after {
+    position: absolute;
+    content: 'OR';
+    background-color: var(--white);
+    color: #bababa;
+    width: 80px;
+    height: 30px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* ======end====== */
+
+
+@media (min-width: 319.98px) and (max-width: 379.98px) {
+    .buttonWidth {
+        width: 100%;
+    }
+
+    .loginSignupContent {
+        width: 100%;
+    }
+
+    .loginSignupBg {
+        background-position: inherit;
+    }
+
+    .loginSignupBox {
+        align-items: flex-end;
+        padding-bottom: 2rem;
+    }
+
+    .loginSignupContent button {
+        font-size: 16px;
+    }
+
+    .formBox {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .formBox h1 {
+        font-size: 40px;
+    }
+
+    .phoneInput i {
+        font-size: 10px;
+    }
+
+    .formCheck label {
+        font-size: 12px;
+    }
+
+    .checkAccount {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 380px) and (max-width: 424.98px) {
+    .buttonWidth {
+        width: 100%;
+    }
+
+    .loginSignupContent {
+        width: 100%;
+    }
+
+    .loginSignupBg {
+        background-position: inherit;
+    }
+
+    .loginSignupBox {
+        align-items: flex-end;
+        padding-bottom: 2rem;
+    }
+
+    .loginSignupContent button {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 425px) and (max-width: 575.98px) {
+    .buttonWidth {
+        width: 100%;
+    }
+
+    .loginSignupContent {
+        width: 100%;
+    }
+
+    .loginSignupBg {
+        background-position: inherit;
+    }
+
+    .loginSignupBox {
+        align-items: flex-end;
+        padding-bottom: 2rem;
+    }
+
+    .loginSignupContent button {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768.98px) {
+
+
+    .loginSignupBg {
+        background-position: inherit;
+    }
+
+    .loginSignupBox {
+        align-items: flex-end;
+        padding-bottom: 2rem;
+    }
+
+    .loginSignupContent button {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 991.98px) {
+
+    .loginSignupBg {
+        background-position: inherit;
+    }
+
+    .loginSignupContent button {
+        font-size: 16px;
+    }
+
+    .formBox {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .formBox h1 {
+        font-size: 40px;
+    }
+
+    .phoneInput i {
+        font-size: 10px;
+    }
+
+    .formCheck label {
+        font-size: 12px;
+    }
+
+    .checkAccount {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1023.98px) {}
+
+@media (min-width: 1024px) and (max-width: 1199.98px) {}
+
+@media (min-width: 1200px) and (max-width: 1279.98px) {}
+
+@media (min-width: 1280px) and (max-width: 1299.98px) {}
+
+@media (min-width: 1300px) and (max-width: 1359.98px) {}
+
+@media (min-width: 1360px) and (max-width: 1439.98px) {}
+
+@media (min-width: 1440px) and (max-width: 1536.98px) {}
+
+@media (min-width: 1537px) and (max-width: 1920px) {}

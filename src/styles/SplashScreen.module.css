@@ -1,0 +1,12 @@
+.splashBg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.splashBg img {
+    width: 100%;
+    height: 100%;
+}
